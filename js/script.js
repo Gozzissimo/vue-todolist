@@ -27,18 +27,18 @@ const app = new Vue (
             todos: [
                 {
                     text: 'Uscire il cane',
-                    done: flase
-                }
+                    done: false
+                },
                 {
                     text: 'Ririrare la biancheria',
                     done: true
-                }
+                },
                 {
                     text: 'Fare la spesa',
                     done: false
-                }
+                },
                 {
-                    text: 'Finire il lavoro di oggi',
+                    text: 'Finire il lavoro di oggi cercando di fare almeno le cose basilari',
                     done: true
                 }
             ]
