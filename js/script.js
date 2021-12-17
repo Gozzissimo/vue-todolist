@@ -39,12 +39,20 @@ const app = new Vue (
                     text: 'Finire il lavoro di oggi cercando di fare almeno le cose basilari',
                     done: true
                 }
-            ]
+            ],
+
+            todoText: ''
         },
 
         methods: {
             removeTodo(index) {
                 this.todos.splice(index, 1)
+            },
+
+            addTodo() {
+                this.todos.push({
+                    text: this.todoText,
+                    done: false});
             }
         }
     }

@@ -43,8 +43,8 @@
                     <div class="input">
                         <div class="todo-add">
                             <span class="input-message">Aggiungi una Nota:</span>
-                            <input type="text">
-                            <i class="fas fa-plus-circle"></i>
+                            <input v-model="todoText" type="text">
+                            <i @click="addTodo" class="fas fa-plus-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
             <main>
                 <h2>Le tue Note:</h2>
                 <ul class="todo-list">
-                    <li :class="todo.done == false ? 'todo-done' : ''" v-for="todo in todos">{{ todo.text }}<i @click="removeTodo()" class="far fa-times-circle"></i></li>
+                    <li :class="todo.done ? 'todo-done' : ''" v-for="todo in todos">{{ todo.text }}<i @click="removeTodo()" class="far fa-times-circle"></i></li>
                 </ul>
             </main>
         </div>
