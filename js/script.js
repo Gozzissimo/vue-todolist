@@ -2,7 +2,7 @@
 // Rifare l’esercizio della to do list.
 // Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 // - text, una stringa che indica il testo del todo
-//     - done, un booleano(true / false) che indica se il todo è stato fatto oppure no
+// - done, un booleano(true / false) che indica se il todo è stato fatto oppure no
 
 // MILESTONE 1
 // Stampare all’interno di una lista, un item per ogni todo.
@@ -24,7 +24,24 @@ const app = new Vue (
     {
         el: '#app',
         data: {
-
+            todos: [
+                {
+                    text: 'Uscire il cane',
+                    done: flase
+                }
+                {
+                    text: 'Ririrare la biancheria',
+                    done: true
+                }
+                {
+                    text: 'Fare la spesa',
+                    done: false
+                }
+                {
+                    text: 'Finire il lavoro di oggi',
+                    done: true
+                }
+            ]
         },
         methods: {
             
