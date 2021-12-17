@@ -54,7 +54,7 @@
             <main>
                 <h2>Le tue Note:</h2>
                 <ul class="todo-list">
-                    <li v-for="todo in todos" class="todo-note">{{ todo.text }}</li>
+                    <li :class="todos.done == false ? 'todo-done' : ''" v-for="todo in todos" class="todo-note">{{ todo.text }}</li>
                 </ul>
             </main>
         </div>
