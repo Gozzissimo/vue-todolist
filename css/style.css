@@ -84,7 +84,7 @@ html {
     flex-wrap: wrap;
 }
 
-.todo-list .todo-note {
+.todo-list li {
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
