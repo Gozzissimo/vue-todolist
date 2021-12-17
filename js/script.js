@@ -58,9 +58,17 @@ const app = new Vue (
                 }
             },
 
-            // sumbit() {
-            //     this.addTodo();
-            // }
+            todoDone() {
+                if (this.todo.done = false) {
+                    this.todo.done = true;
+                } else {
+                    this.todo.done = false;
+                }
+            },
+
+            sumbit() {
+                this.addTodo();
+            }
 
         }
     }
