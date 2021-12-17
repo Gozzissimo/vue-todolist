@@ -43,11 +43,9 @@ const app = new Vue (
         },
 
         methods: {
-            // clickDone() {
-            //     if (this.todos.done = false) {
-            //         this.todos.text.classList.add('done')
-            //     }
-            // }
+            removeTodo(index) {
+                this.todos.splice(index, 1)
+            }
         }
     }
 );

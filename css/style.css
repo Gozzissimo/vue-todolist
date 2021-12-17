@@ -74,6 +74,12 @@ html {
     width: 100px;
 }
 
+.todo-add i:hover,
+.todo-list i:active,
+.todo-list i:focus {
+    cursor: pointer;
+}
+
 .todo-list {
     list-style: none;
     border: 2px solid #4B4B55;
@@ -90,6 +96,19 @@ html {
     border-radius: 20px;
     color: #2E2E2E;
     background-color: #8A8AFC;
+    line-height: 1.5em;
+}
+
+.todo-list li i {
+    padding-left: 10px;
+    color: #2E2E2E;
+    font-size: 1.5em;
+}
+
+.todo-list li i:hover,
+.todo-list li i:active,
+.todo-list li i:focus {
+    cursor: pointer;
 }
 
 .todo-done {

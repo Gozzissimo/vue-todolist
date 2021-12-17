@@ -50,11 +50,11 @@
                 </div>
             </header>
 
-
+            <!-- main -->
             <main>
                 <h2>Le tue Note:</h2>
                 <ul class="todo-list">
-                    <li :class="todos.done == false ? 'todo-done' : ''" v-for="todo in todos">{{ todo.text }}</li>
+                    <li :class="todo.done == false ? 'todo-done' : ''" v-for="todo in todos">{{ todo.text }}<i @click="removeTodo()" class="far fa-times-circle"></i></li>
                 </ul>
             </main>
         </div>
