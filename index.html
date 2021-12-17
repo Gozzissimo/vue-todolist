@@ -43,7 +43,7 @@
                     <div class="input">
                         <div class="todo-add">
                             <span class="input-message">Aggiungi una Nota:</span>
-                            <input v-model="todoText" type="text">
+                            <input @keyup.enter="submit" v-model="todoText" type="text">
                             <i @click="addTodo" class="fas fa-plus-circle"></i>
                         </div>
                     </div>

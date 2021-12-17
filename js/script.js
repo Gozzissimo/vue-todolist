@@ -50,10 +50,18 @@ const app = new Vue (
             },
 
             addTodo() {
-                this.todos.push({
-                    text: this.todoText,
-                    done: false});
-            }
+                if (this.todoText !== '') {
+                    this.todos.push({
+                        text: this.todoText,
+                        done: false});
+                    this.todoText = '';        
+                }
+            },
+
+            // sumbit() {
+            //     this.addTodo();
+            // }
+
         }
     }
 );

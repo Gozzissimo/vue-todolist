@@ -25,24 +25,31 @@ html {
 .header-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100px;
+    margin
 }
 
 .pro-pic {
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+    border: 3px solid #8A8AFC;
 }
 .pro-pic img {
     height: 100%;
 }
 
 .welcome h3 {
-    font-weight:400;
+    font-weight: 400;
+}
+
+.welcome h1 {
+    color: #8A8AFC;
 }
 
 .header-bottom .todo-add {
-    margin: 20px 0;
+    margin: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
