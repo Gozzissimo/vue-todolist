@@ -54,7 +54,7 @@
             <main>
                 <h2>Le tue Note:</h2>
                 <ul v-if="todos.length > 0" class="todo-list">
-                    <li @click="todoDone(index)" :class="todo.done ? 'todo-done' : ''" v-for="(todo, index) in todos">{{ todo.text }}<i @click="removeTodo(index)" class="far fa-times-circle"></i></li>
+                    <li v-for="(todo, index) in todos" @click="todoDone(index)" :class="todo.done ? 'todo-done' : ''">{{ todo.text }}<i @click="removeTodo(index)" class="far fa-times-circle"></i></li>
                 </ul>
             </main>
         </div>

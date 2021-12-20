@@ -54,15 +54,15 @@ const app = new Vue (
                     this.todos.unshift({
                         text: this.todoText,
                         done: false});
-                    this.todoText = '';        
+                    this.todoText = '';
                 }
             },
 
             todoDone(index) {
                 if (this.todos[index].done) {
-                    this.todos[index].don = true;
+                    this.todos[index].done = false;
                 } else {
-                    this.todos[index].don = false;
+                    this.todos[index].done = true;
                 }
             },
         }
