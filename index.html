@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>ToBoolist</title>
 </head>
 <body>
 
@@ -43,7 +43,7 @@
                     <div class="input">
                         <div class="todo-add">
                             <span class="input-message">Aggiungi una Nota:</span>
-                            <input @keyup.enter="submit" v-model="todoText" type="text">
+                            <input @keyup.enter="addTodo" v-model="todoText" type="text">
                             <i @click="addTodo" class="fas fa-plus-circle"></i>
                         </div>
                     </div>
@@ -53,8 +53,8 @@
             <!-- main -->
             <main>
                 <h2>Le tue Note:</h2>
-                <ul class="todo-list">
-                    <li @click="todoDone" :class="todo.done ? 'todo-done' : ''" v-for="todo in todos">{{ todo.text }}<i @click="removeTodo()" class="far fa-times-circle"></i></li>
+                <ul v-if="todos.length > 0" class="todo-list">
+                    <li @click="todoDone(index)" :class="todo.done ? 'todo-done' : ''" v-for="(todo, index) in todos">{{ todo.text }}<i @click="removeTodo(index)" class="far fa-times-circle"></i></li>
                 </ul>
             </main>
         </div>

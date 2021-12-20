@@ -50,26 +50,21 @@ const app = new Vue (
             },
 
             addTodo() {
-                if (this.todoText !== '') {
-                    this.todos.push({
+                if (this.todoText.trim() !== '') {
+                    this.todos.unshift({
                         text: this.todoText,
                         done: false});
                     this.todoText = '';        
                 }
             },
 
-            todoDone() {
-                if (this.todo.done = false) {
-                    this.todo.done = true;
+            todoDone(index) {
+                if (this.todos[index].done) {
+                    this.todos[index].don = true;
                 } else {
-                    this.todo.done = false;
+                    this.todos[index].don = false;
                 }
             },
-
-            sumbit() {
-                this.addTodo();
-            }
-
         }
     }
 );

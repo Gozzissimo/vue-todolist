@@ -104,6 +104,7 @@ html {
     color: #2E2E2E;
     background-color: #8A8AFC;
     line-height: 1.5em;
+    cursor: pointer;
 }
 
 .todo-list li i {
